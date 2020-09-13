@@ -1,6 +1,5 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://us-central1-sign-language-detector.cloudfunctions.net',
   firebase: {
     apiKey: 'AIzaSyDG-av_fhucDCL_cQv0z45q3g1u2lCJ2QA',
     authDomain: 'sign-language-detector.firebaseapp.com',

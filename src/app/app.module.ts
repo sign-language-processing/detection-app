@@ -6,7 +6,6 @@ import {AppComponent} from './app.component';
 import {DeviceDetectorModule} from 'ngx-device-detector';
 import {AppSharedModule} from './core/modules/shared.module';
 import {HeaderComponent} from './components/header/header.component';
-import {CalendarComponent} from './components/calendar/calendar.component';
 import {VideoComponent} from './components/video/video.component';
 import {MainPageComponent} from './pages/main/main.component';
 import {SettingsComponent} from './components/settings/settings.component';
@@ -24,7 +23,6 @@ import {AudioInstructionsComponent} from './components/audio/audio-instructions/
   declarations: [
     AppComponent,
     HeaderComponent,
-    CalendarComponent,
     VideoComponent,
     SettingsComponent,
     VideoControlsComponent,

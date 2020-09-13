@@ -3,9 +3,7 @@ import {environment} from '../../../../environments/environment';
 import {NgxsModule, NgxsModuleOptions} from '@ngxs/store';
 import {NgxsInterceptorPluginModule} from './ngxs-interceptor/ngxs-interceptor.plugin';
 import {NgxsRouterPluginModule} from '@ngxs/router-plugin';
-import {AuthState} from './store/auth/auth.state';
 import {AppState} from './store/app/app.state';
-import {CalendarState} from './store/calendar/calendar.state';
 import {SettingsState} from './store/settings/settings.state';
 import {VideoState} from './store/video/video.state';
 import {ModelsState} from './store/models/models.state';
@@ -27,7 +25,7 @@ export const ngxsConfig: NgxsModuleOptions = {
 
 @NgModule({
   imports: [
-    NgxsModule.forRoot([AppState, SettingsState, VideoState, AudioState, ModelsState, AuthState], ngxsConfig), // CalendarState
+    NgxsModule.forRoot([AppState, SettingsState, VideoState, AudioState, ModelsState], ngxsConfig),
     NgxsRouterPluginModule.forRoot(),
     NgxsInterceptorPluginModule.forRoot(),
   ]

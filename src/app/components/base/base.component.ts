@@ -10,10 +10,10 @@ import {Subject} from 'rxjs';
   `,
   styles: []
 })
-export class BaseComponent implements OnDestroy {
+export abstract class BaseComponent implements OnDestroy {
   ngUnsubscribe: Subject<void> = new Subject<void>();
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.ngUnsubscribe.next();
     this.ngUnsubscribe.complete();
   }

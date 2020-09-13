@@ -17,7 +17,6 @@ import {TranslocoService} from '@ngneat/transloco';
 export class AppComponent implements OnInit {
   @Select(state => state.app.isLoading) isLoading$: Observable<boolean>;
   @Select(state => state.app.error) error$: Observable<string>;
-  @Select(state => state.auth) auth$: Observable<any>;
   @Select(state => state.audio.error) audioError$: Observable<string>;
 
   loaderDialog: MatDialogRef<MatProgressSpinner>;

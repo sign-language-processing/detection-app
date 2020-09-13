@@ -1,13 +1,6 @@
 {
   "header": {
-    "title": "Sign Language Detector",
-    "signIn": "Sign In",
-    "signOut": "Sign out"
-  },
-  "calendar": {
-    "title": "Calendar",
-    "today": "Today",
-    "tomorrow": "Tomorrow"
+    "title": "Sign Language Detector"
   },
   "settings": {
     "shareData": "Help us improve this service"

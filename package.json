@@ -9,7 +9,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:deploy": "ng build --configuration=production && firebase deploy",
-    "build:deploy:hosting": "ng build --configuration=production && firebase deploy --only=hosting",
     "watch:functions": "tsc --project functions/tsconfig.json -w",
     "serve:functions": "firebase serve --only=functions"
   },

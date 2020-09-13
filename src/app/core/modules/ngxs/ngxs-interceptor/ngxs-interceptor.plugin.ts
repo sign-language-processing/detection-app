@@ -1,7 +1,6 @@
 import {Inject, Injectable, InjectionToken, ModuleWithProviders, NgModule} from '@angular/core';
 import {AngularFireAnalytics} from '@angular/fire/analytics';
 import {NGXS_PLUGINS, NgxsPlugin} from '@ngxs/store';
-import {AngularFireAuth} from '@angular/fire/auth';
 
 export const NGXS_INTERCEPTOR_PLUGIN_OPTIONS = new InjectionToken('NGXS_INTERCEPTOR_PLUGIN_OPTIONS');
 
@@ -15,7 +14,6 @@ export class NgxsInterceptorPlugin implements NgxsPlugin {
   ];
 
   constructor(@Inject(NGXS_INTERCEPTOR_PLUGIN_OPTIONS) private options: any,
-              private afAuth: AngularFireAuth,
               private analytics: AngularFireAnalytics) {
   }
 
