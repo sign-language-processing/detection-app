@@ -1,0 +1,19 @@
+<ng-container *ngIf="videoState$ | async as video">
+  <ng-container *transloco="let t; read: 'video'">
+    <p *ngIf="video.error">{{t('errors.' + video.error)}}</p>
+  </ng-container>
+
+  <div id="video-container">
+    <video #video class="flip" width="100%" height="100%"></video>
+    <div #stats [hidden]="!video.camera"></div>
+  </div>
+
+  <!--  <app-video-pose *ngIf="dominantHand$ |async as hand"-->
+  <!--                  [hidden]="!video.camera"></app-video-pose>-->
+  <app-video-help></app-video-help>
+  <app-video-controls></app-video-controls>
+
+  <app-audio [playState]="isSigning$"></app-audio>
+</ng-container>
+
+

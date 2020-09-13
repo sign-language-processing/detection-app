@@ -1,0 +1,36 @@
+button[mat-fab] {
+  margin: 0 6px;
+
+  &.transparent {
+    box-shadow: 0 0 0 1px inset white;
+    background: transparent;
+  }
+}
+
+#signing-indicator {
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+  color: #64ffda;
+
+  &.active {
+    animation: spin 0.2s linear infinite;
+  }
+}
+
+#hand-selector {
+  position: absolute;
+  right: 16px;
+
+  &.dominant-left {
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+

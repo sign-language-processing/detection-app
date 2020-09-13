@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  baseUrl: 'http://localhost:5000/sign-language-detector/us-central1',
   firebase: {
     apiKey: 'AIzaSyDG-av_fhucDCL_cQv0z45q3g1u2lCJ2QA',
     authDomain: 'sign-language-detector.firebaseapp.com',

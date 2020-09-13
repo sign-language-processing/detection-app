@@ -1,0 +1,35 @@
+<mat-toolbar *transloco="let t; read: 'header'">
+  <mat-icon>hearing</mat-icon>
+
+  <span>{{'header.title' | transloco}}</span>
+
+<!--  <span class="spacer"></span>-->
+
+<!--  <ng-container *ngIf="authState$ | async as authState">-->
+<!--    &lt;!&ndash; Loader &ndash;&gt;-->
+<!--    <ng-container *ngIf="authState.isLoggedIn === undefined">-->
+<!--      <mat-spinner diameter="32"></mat-spinner>-->
+<!--    </ng-container>-->
+
+<!--    &lt;!&ndash; Signed out &ndash;&gt;-->
+<!--    <button mat-raised-button color="primary" id="sign-in" (click)="signIn()"-->
+<!--            *ngIf="authState.isLoggedIn === false">-->
+<!--      {{ t('signIn') }}-->
+<!--    </button>-->
+
+<!--    &lt;!&ndash; Signed In &ndash;&gt;-->
+<!--    <ng-container *ngIf="authState.isLoggedIn">-->
+<!--      <button mat-icon-button aria-label="App Settings" (click)="calendarNav.toggle()">-->
+<!--        <mat-icon>calendar_today</mat-icon>-->
+<!--      </button>-->
+
+<!--      <div id="auth-details">-->
+<!--        <div>-->
+<!--          <span>{{authState.user.email}}</span>-->
+<!--          <a (click)="signOut()">{{ t('signOut') }}</a>-->
+<!--        </div>-->
+<!--        <img [src]="authState.user.photoURL" alt="avatar" class="auth-avatar"/>-->
+<!--      </div>-->
+<!--    </ng-container>-->
+<!--  </ng-container>-->
+</mat-toolbar>

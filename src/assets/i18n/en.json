@@ -1,0 +1,58 @@
+{
+  "header": {
+    "title": "Sign Language Detector",
+    "signIn": "Sign In",
+    "signOut": "Sign out"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "today": "Today",
+    "tomorrow": "Tomorrow"
+  },
+  "settings": {
+    "shareData": "Help us improve this service"
+  },
+  "video": {
+    "errors": {
+      "starting": "Camera starting",
+      "turnedOff": "Camera turned off",
+      "notConnected": "Camera not connected",
+      "permissionDenied": "Camera permission denied"
+    },
+    "controls": {
+      "transmitAudio": {
+        "on": "Turn off virtual microphone",
+        "off": "Turn on virtual microphone"
+      },
+      "receiveVideo": {
+        "on": "Turn off camera",
+        "off": "Turn on camera"
+      },
+      "dominantHand": {
+        "left": "Left handed",
+        "right": "Right handed"
+      }
+    },
+    "help": {
+      "menu": {
+        "help": "Help",
+        "feedback": "Report a problem",
+        "micTest": "Test Microphone"
+      }
+    }
+  },
+  "audio": {
+    "errors": {
+      "permissionDenied": "Microphone permission denied"
+    },
+    "broadcast": {
+      "title": "Microphone Test",
+      "description": "Please make sure you are using the \"<strong>{{mic}}</strong>\" microphone in your videoconferencing app of choice."
+    },
+    "instructions": {
+      "title": "Audio Setup Instructions",
+      "close": "Close",
+      "done": "Done"
+    }
+  }
+}

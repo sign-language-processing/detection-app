@@ -1,0 +1,16 @@
+<ng-container *transloco="let t; read: 'audio.broadcast'">
+  <h1 mat-dialog-title>{{t('title')}}</h1>
+  <mat-dialog-content *ngIf="audioState$|async as audioState">
+    <ng-container *ngIf="audioState.microphone">
+      <p [innerHTML]="t('description', {mic: audioState.speakerSink.label})"></p>
+
+      <button *ngIf="play$.value" mat-flat-button color="primary" (click)="play$.next(false)">Pause</button>
+      <button *ngIf="!play$.value" mat-flat-button color="primary" (click)="play$.next(true)">Play</button>
+
+      <app-audio [playState]="play$"></app-audio>
+    </ng-container>
+    <ng-container *ngIf="audioState.error">
+      <p>{{ 'audio.errors.' + audioState.error | transloco }}</p>
+    </ng-container>
+  </mat-dialog-content>
+</ng-container>

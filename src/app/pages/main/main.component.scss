@@ -1,0 +1,45 @@
+@import "../../../theme/variables";
+
+:host {
+  display: flex;
+  height: calc(100vh - 64px);
+}
+
+app-video {
+  min-height: 216px;
+  height: 720px;
+  max-height: 45vw;
+
+  &.aspect-4-3 {
+    min-width: 288px;
+    width: 960px;
+    max-width: 60vw;
+  }
+
+  &.aspect-16-9 {
+    min-width: 384px;
+    width: 1280px;
+    max-width: 80vw;
+  }
+
+  &.aspect-2-1 {
+    min-width: 432px;
+    width: 1440px;
+    max-width: 90vw;
+  }
+}
+
+#main-vertical {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  @media #{$mat-lt-md} {
+    margin: 16px auto 0;
+  }
+}
+
+
+#main-horizontal {
+  display: flex;
+}

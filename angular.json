@@ -24,8 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/theme/styles.scss"
             ],
             "scripts": []
           },
@@ -89,8 +89,8 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/theme/styles.scss"
             ],
             "scripts": []
           }
@@ -123,5 +123,13 @@
       }
     }
   },
-  "defaultProject": "sign-language-detector"
+  "defaultProject": "sign-language-detector",
+  "cli": {
+    "analytics": "da7f7e1b-ea69-47b0-a971-5d7f28b86a48"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
