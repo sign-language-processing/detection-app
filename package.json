@@ -48,6 +48,7 @@
     "@angular/compiler-cli": "~10.1.1",
     "@types/jasmine": "^3.5.14",
     "@types/jasminewd2": "~2.0.3",
+    "@types/webgl2": "0.0.5",
     "codelyzer": "^6.0.0-next.1",
     "firebase-tools": "^8.10.0",
     "fuzzy": "^0.1.3",
