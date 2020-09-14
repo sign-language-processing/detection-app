@@ -5,7 +5,6 @@ import {Observable} from 'rxjs';
 import {SetSetting} from '../settings/settings.actions';
 import {NavigatorService} from '../../../../services/navigator/navigator.service';
 import {DisableTransmission, EnableTransmission} from './audio.actions';
-import {environment} from '../../../../../../environments/environment';
 
 const allowedVACDevices = new Set([
   'Line 1 (Virtual Audio Cable)',
@@ -67,21 +66,6 @@ export class AudioState implements NgxsOnInit {
     });
   }
 
-  private async getSpeaker(mandatory: boolean = true): Promise<SpeakerSink> {
-    try {
-      const speakerSinkDevice = await this.navigator.getSpeaker(allowedVACDevices);
-      return {
-        id: speakerSinkDevice.deviceId,
-        label: speakerSinkDevice.label,
-      };
-    } catch (e) {
-      if (mandatory) {
-        throw e;
-      }
-      return null;
-    }
-  }
-
   @Action(EnableTransmission)
   async enableTransmission(context: StateContext<AudioStateModel>): Promise<void> {
     const {patchState, dispatch} = context;
@@ -101,6 +85,21 @@ export class AudioState implements NgxsOnInit {
     } catch (e) {
       patchState({error: e.message});
       turnOffAudio();
+    }
+  }
+
+  private async getSpeaker(mandatory: boolean = true): Promise<SpeakerSink> {
+    try {
+      const speakerSinkDevice = await this.navigator.getSpeaker(allowedVACDevices);
+      return {
+        id: speakerSinkDevice.deviceId,
+        label: speakerSinkDevice.label,
+      };
+    } catch (e) {
+      if (mandatory) {
+        throw e;
+      }
+      return null;
     }
   }
 }

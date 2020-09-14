@@ -7,7 +7,7 @@ import {filter, map, takeUntil, tap} from 'rxjs/operators';
 import {BaseComponent} from '../base/base.component';
 import {wait} from '../../core/helpers/wait/wait';
 import {PoseVideoFrame} from '../../core/modules/ngxs/store/models/models.actions';
-import {Hand, SettingsStateModel} from '../../core/modules/ngxs/store/settings/settings.state';
+import {Hand} from '../../core/modules/ngxs/store/settings/settings.state';
 
 @Component({
   selector: 'app-video',

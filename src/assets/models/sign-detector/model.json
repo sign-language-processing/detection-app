@@ -13,7 +13,11 @@
           {
             "class_name": "Dropout",
             "config": {
-              "batch_input_shape": [1, 1, 25],
+              "batch_input_shape": [
+                1,
+                1,
+                25
+              ],
               "name": "dropout",
               "trainable": true,
               "dtype": "float32",

@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {DeviceDetectorModule} from 'ngx-device-detector';
 import {AppSharedModule} from './core/modules/shared.module';
 import {HeaderComponent} from './components/header/header.component';
 import {VideoComponent} from './components/video/video.component';
@@ -37,7 +36,6 @@ import {AudioInstructionsComponent} from './components/audio/audio-instructions/
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DeviceDetectorModule,
     AppSharedModule,
   ],
   providers: [

@@ -1,4 +1,4 @@
-import {Component, OnDestroy} from '@angular/core';
+import {Component} from '@angular/core';
 import {BehaviorSubject, Observable} from 'rxjs';
 import {Select} from '@ngxs/store';
 import {AudioStateModel} from '../../../core/modules/ngxs/store/audio/audio.state';
