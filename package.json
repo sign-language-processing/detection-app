@@ -8,9 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:deploy": "ng build --configuration=production && firebase deploy",
-    "watch:functions": "tsc --project functions/tsconfig.json -w",
-    "serve:functions": "firebase serve --only=functions"
+    "build:deploy": "ng build --configuration=production && firebase deploy"
   },
   "private": true,
   "dependencies": {

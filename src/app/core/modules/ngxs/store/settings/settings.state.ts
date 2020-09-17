@@ -5,14 +5,12 @@ import {SetSetting} from './settings.actions';
 export type Hand = 'right' | 'left';
 
 export interface SettingsStateModel {
-  shareData: boolean;
   dominantHand: Hand;
   transmitAudio: boolean;
   receiveVideo: boolean;
 }
 
 const initialState: SettingsStateModel = {
-  shareData: true,
   dominantHand: 'right',
   transmitAudio: true,
   receiveVideo: true

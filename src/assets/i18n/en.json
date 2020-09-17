@@ -2,9 +2,6 @@
   "header": {
     "title": "Sign Language Detector"
   },
-  "settings": {
-    "shareData": "Help us improve this service"
-  },
   "video": {
     "errors": {
       "starting": "Camera starting",
