@@ -9,3 +9,14 @@ This demo app is available to try at [sign-language-detector.web.app](https://si
 For an overview of this project, please watch our demo video:
 
 [![Explanation Video](https://img.youtube.com/vi/nozz2pvbG_Q/0.jpg)](https://www.youtube.com/watch?v=nozz2pvbG_Q)
+
+## Citation
+
+```bibtex
+@article{moryossef2020real,
+    title = {Real-Time Sign-Language Detection using Human Pose Estimation},
+    author = {Moryossef, Amit and Tsochantaridis, Ioannis and Aharoni, Roee Yosef and Ebling, Sarah and Narayanan, Srini},
+    year = {2020},
+    booktitle = {SLRTP 2020: The Sign Language Recognition, Translation & Production Workshop},
+}
+```
